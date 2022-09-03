@@ -1,0 +1,58 @@
+GET http://localhost:3031/products
+
+
+###
+GET http://localhost:3031/products/62e0092948214aa1aedc89a9
+
+
+###
+POST http://localhost:3031/products
+Content-Type: application/json
+
+{
+    "title":"Food", 
+    "price":"250",
+    "description":"Vegans live longer"
+
+}
+
+###
+PATCH http://localhost:3031/products/62e00f6bb542f11aafd37ea5
+Content-Type: application/json
+
+{
+    "title": "Pizza_food",
+    "price": "3000"
+}
+
+###
+DELETE http://localhost:3031/products/62e00f6bb542f11aafd37ea5
+
+//The Review Route Server-Side:
+
+###
+GET http://localhost:3031/reviews
+
+###
+GET http://localhost:3031/reviews/62e0330e9b147f1319ae9ea5
+
+###
+POST http://localhost:3031/reviews
+Content-Type: application/json
+
+{
+    "rating": "4",
+    "description": "Fair"
+}
+
+###
+PATCH http://localhost:3031/reviews/62e0330e9b147f1319ae9ea5
+Content-Type: application/json
+
+{
+    "rating": "1",
+    "description": "Poor"
+}
+
+###
+DELETE http://localhost:3031/reviews/
